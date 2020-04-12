@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import './App.css';
 
-import AddNumber from  './components/addNumber.js';
+import AddNumber from  './containers/addNumber.js';
 import ShowNumber from  './components/showNumber.js';
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
     <div className="App">
       App root
       <AddNumber></AddNumber>
-      <ShowNumber number={number}></ShowNumber>
+      <ShowNumber></ShowNumber>
     </div>
   );
 }

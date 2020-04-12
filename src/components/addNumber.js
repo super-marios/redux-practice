@@ -1,13 +1,12 @@
-import React from 'react';
+import React, {useState} from 'react';
 import store from '../store.js';
 
-const AddNumber = () => {
+const AddNumber = ({number, onClick}) => {
         return (
             <div>
-               Add number Root
+            	Add number
                 <div>
-                    <input value={0}/>
-                    <button onClick={() => store.dispatch({type:'INCREMENT'})} >ADD</button>
+                    <button onClick={() => onClick()} >ADD +1</button>
                 </div>
 
             </div>
