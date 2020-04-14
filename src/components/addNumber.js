@@ -1,14 +1,14 @@
 import React, {useState} from 'react';
 import store from '../store.js';
 
-const AddNumber = ({number, onClick}) => {
+const AddNumber = (props) => {
         return (
             <div>
             	Add number
                 <div>
-                    <button onClick={() => onClick()} >ADD +1</button>
+                    <button onClick={() => store.dispatch({type:'INCREMENT'})} >ADD +1</button>
                 </div>
-
+                {props.unit}
             </div>
         );
 }

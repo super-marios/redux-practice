@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App">
       App root
-      <AddNumber></AddNumber>
+      <AddNumber unit={"kg"}></AddNumber>
       <ShowNumber></ShowNumber>
     </div>
   );
